@@ -7,11 +7,11 @@
       "RelativeMoniker": "D:0:0:{CF0C87FE-8B20-4084-9A9E-EC26B4CA0EC6}|API\\API.csproj|solutionrelative:api\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF0C87FE-8B20-4084-9A9E-EC26B4CA0EC6}|API\\API.csproj|c:\\users\\crist\\onedrive\\documentos\\visual studio 2022\\projects\\finshark\\api\\mappers\\stockmappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CF0C87FE-8B20-4084-9A9E-EC26B4CA0EC6}|API\\API.csproj|C:\\Users\\crist\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\FinShark\\api\\mappers\\stockmappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF0C87FE-8B20-4084-9A9E-EC26B4CA0EC6}|API\\API.csproj|solutionrelative:api\\mappers\\stockmappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF0C87FE-8B20-4084-9A9E-EC26B4CA0EC6}|API\\API.csproj|c:\\users\\crist\\onedrive\\documentos\\visual studio 2022\\projects\\finshark\\api\\models\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CF0C87FE-8B20-4084-9A9E-EC26B4CA0EC6}|API\\API.csproj|C:\\Users\\crist\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\FinShark\\api\\models\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF0C87FE-8B20-4084-9A9E-EC26B4CA0EC6}|API\\API.csproj|solutionrelative:api\\models\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -33,6 +33,10 @@
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "StockController.cs",
@@ -40,7 +44,7 @@
               "RelativeDocumentMoniker": "API\\Controllers\\StockController.cs",
               "ToolTip": "C:\\Users\\crist\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\FinShark\\API\\Controllers\\StockController.cs",
               "RelativeToolTip": "API\\Controllers\\StockController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACEAAAAsAAAA",
+              "ViewState": "AQIAADgAAAAAAAAAAAAhwCEAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-16T02:07:34.202Z",
               "EditorCaption": ""
@@ -55,8 +59,7 @@
               "RelativeToolTip": "API\\Models\\Stock.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T02:06:05.808Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-16T02:06:05.808Z"
             },
             {
               "$type": "Document",
@@ -68,8 +71,7 @@
               "RelativeToolTip": "API\\Mappers\\StockMappers.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T02:05:02.991Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-16T02:05:02.991Z"
             }
           ]
         }
