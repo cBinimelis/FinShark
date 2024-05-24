@@ -9,6 +9,7 @@ namespace API.Repository
     public class StockRepository : IStockRepository
     {
         private readonly ApplicationDBContext _dbContext;
+
         public StockRepository(ApplicationDBContext dBContext)
         {
             _dbContext = dBContext;
@@ -34,12 +35,14 @@ namespace API.Repository
 
         public Task<List<Stock>> GetAllAsync()
         {
-            return _dbContext.Stocks.ToListAsync();
+            return _dbContext.Stocks.Include(c => c.Comments).ToListAsync();
         }
 
         public async Task<Stock?> GetByIdAsync(int id)
         {
-            return await _dbContext.Stocks.FindAsync(id);
+            return await _dbContext
+                .Stocks.Include(c => c.Comments)
+                .FirstOrDefaultAsync(i => i.Id == id);
         }
 
         public async Task<Stock?> UpdateAsync(int id, UpdateStockRequestDto stockRequestDto)
@@ -47,7 +50,6 @@ namespace API.Repository
             var existingStock = await _dbContext.Stocks.FirstOrDefaultAsync(x => x.Id == id);
             if (existingStock == null)
                 return null;
-
 
             existingStock.Symbol = stockRequestDto.Symbol;
             existingStock.CompanyName = stockRequestDto.CompanyName;
@@ -58,7 +60,6 @@ namespace API.Repository
 
             await _dbContext.SaveChangesAsync();
             return existingStock;
-
         }
     }
 }
