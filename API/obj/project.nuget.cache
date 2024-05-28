@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9hT+/KAzFxjJGq1zzeo1+Mkz/PtqHK3IZlBFwvgEL33HWFbO4GJP2Sojh1PyemKKLu0rc6Zgt0u8IDHv3NGXvQ==",
+  "dgSpecHash": "aoayC5YcDgXOOwNsSYEutUCLRlwNNj6NSmWjROmxzKcGglkF6+CbRQJXLdnBGCmuhCxFr9ks+hg1GALv8EXt6g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\crist\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\FinShark\\api\\API.csproj",
+  "projectFilePath": "C:\\Users\\crist\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\FinShark\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\crist\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\crist\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
