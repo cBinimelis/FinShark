@@ -23,9 +23,13 @@ namespace API.Mappers
             {
                 Title = commentDto.Title,
                 Content = commentDto.Content,
-                CreatedOn = DateTime.Now,
                 StockId = stockId,
             };
+        }
+
+        public static Comment ToCommentFromUpdate(this UpdateCommentRequestDto updateDto)
+        {
+            return new Comment { Title = updateDto.Title, Content = updateDto.Content, };
         }
     }
 }

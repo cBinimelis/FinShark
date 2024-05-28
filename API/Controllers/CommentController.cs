@@ -43,7 +43,7 @@ public class CommentController : ControllerBase
     public async Task<IActionResult> Create([FromRoute] int stockId, CreateCommentDto commentDto)
     {
         bool stockExit = await _stockRepo.StockExist(stockId);
-        if (stockExit)
+        if (!stockExit)
         {
             return BadRequest("Stock does not exist.");
         }
@@ -52,8 +52,35 @@ public class CommentController : ControllerBase
 
         return CreatedAtAction(
             nameof(GetById),
-            new { id = commentModel },
+            new { id = commentModel.Id },
             commentModel.ToCommentDto()
         );
+    }
+
+    [HttpDelete]
+    [Route("{id}")]
+    public async Task<IActionResult> Delete([FromRoute] int id)
+    {
+        var comment = await _commentRepo.DeleteAsync(id);
+        if (comment == null)
+        {
+            return NotFound("Comment does not exist");
+        }
+        return Ok(comment);
+    }
+
+    [HttpPut]
+    [Route("{id}")]
+    public async Task<IActionResult> Update(
+        [FromRoute] int id,
+        [FromBody] UpdateCommentRequestDto updateDto
+    )
+    {
+        var comment = await _commentRepo.UpdateAsync(id, updateDto.ToCommentFromUpdate());
+        if (comment == null)
+        {
+            return NotFound("Comment not found");
+        }
+        return Ok(comment.ToCommentDto());
     }
 }
