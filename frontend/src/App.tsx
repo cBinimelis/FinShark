@@ -1,19 +1,16 @@
-import { Outlet } from "react-router";
-import Navbar from "./Components/Navbar/Navbar";
-import "react-toastify/dist/ReactToastify.css";
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
 import "./App.css";
-import { ToastContainer } from "react-toastify";
-import { UserProvider } from "./Context/useAuth";
+import Card from "./Component/Card/Card";
 
 function App() {
+  const [count, setCount] = useState(0);
+
   return (
-    <>
-      <UserProvider>
-        <Navbar />
-        <Outlet />
-        <ToastContainer />
-      </UserProvider>
-    </>
+    <div className="App">
+      <Card />
+    </div>
   );
 }
 
